@@ -40,6 +40,7 @@ const masNumbers = [itemNumberAnimals, itemNumberProducts, itemNumberTech];
 //console.log(masNumbers);
 
 for (let i = 0; i < numberOfcategories.length; i += 1) {
+  console.log("");
   console.log(`Category: ${masTitles[i]}`);
   console.log(`Elements: ${masNumbers[i]}`);
 }
