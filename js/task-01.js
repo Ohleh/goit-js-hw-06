@@ -26,18 +26,17 @@ const firstCatText = firstCatTitleLi.children[0];
 const itemNumberAnimals = firstCat.children.length;
 
 const secondCat = firstCatTitleLi.nextElementSibling.children[1];
-//console.log(secondCat.children.length);
+
 const itemNumberProducts = secondCat.children.length;
 
 const thirdCat =
   firstCatTitleLi.nextElementSibling.nextElementSibling.children[1];
-//console.log(thirdCat.children.length);
+
 const itemNumberTech = thirdCat.children.length;
 
 const masTitles = [itemTitleAnimals, itemTitleProducts, itemTitleTechnologies];
-//console.log(masTitles);
+
 const masNumbers = [itemNumberAnimals, itemNumberProducts, itemNumberTech];
-//console.log(masNumbers);
 
 for (let i = 0; i < numberOfcategories.length; i += 1) {
   console.log("");
