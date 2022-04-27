@@ -8,7 +8,6 @@ const boxeDiv = document.querySelector("#boxes");
 // Create_button
 const createElemButton = document.querySelector("[data-create]");
 function createBoxes() {
-  let counterDiv = inputNumber.value;
   let iPx = 30;
   for (let i = 0; i < inputNumber.value; i += 1) {
     boxeDiv.insertAdjacentHTML(
