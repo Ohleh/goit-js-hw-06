@@ -4,10 +4,10 @@ let counterValue = 0;
 //decrement:
 const buttonDecrement = document.querySelector('[data-action="decrement"]');
 
-const handleClicDoun = () => {
+const handleClicDown = () => {
   spanValue.textContent = counterValue -= 1;
 };
-buttonDecrement.addEventListener("click", handleClicDoun);
+buttonDecrement.addEventListener("click", handleClicDown);
 //
 //increment:
 const buttonIncrement = document.querySelector('[data-action="increment"]');
