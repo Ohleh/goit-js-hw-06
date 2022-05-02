@@ -16,12 +16,19 @@ const images = [
 const galleryJs = document.querySelector(".gallery");
 console.log(galleryJs);
 
-for (const image of images) {
+images.forEach((element) => {
   galleryJs.insertAdjacentHTML(
     "beforeend",
-    `<li class="galleryListTaskTree"> <img src=${image.url} alt=${image.alt} width = 700px>  </li>`
+    `<li class="galleryListTaskTree"> <img src="${element.url}" alt="${element.alt}" width = 700px>  </li>`
   );
-}
+});
+
+// for (const image of images) {
+//   galleryJs.insertAdjacentHTML(
+//     "beforeend",
+//     `<li class="galleryListTaskTree"> <img src="${image.url}" alt="${image.alt}" width = 700px>  </li>`
+//   );
+// }
 
 // Використовуй масив об'єктів images для створення елементів <img>, вкладених в <li>.
 // Для створення розмітки використовуй шаблонні рядки і метод insertAdjacentHTML().
