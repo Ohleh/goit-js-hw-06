@@ -8,11 +8,21 @@ const ingredients = [
 ];
 
 const listIngredients = document.querySelector("#ingredients");
-console.log(listIngredients);
+// console.log(listIngredients);
 
-ingredients.forEach((number) => {
-  const IngItemFirstNew = document.createElement("li");
-  IngItemFirstNew.textContent = number;
-  IngItemFirstNew.classList.add("item");
-  listIngredients.append(IngItemFirstNew);
+// ingredients.forEach((number) => {
+//   const IngItemFirstNew = document.createElement("li");
+//   IngItemFirstNew.textContent = number;
+//   IngItemFirstNew.classList.add("item");
+//   listIngredients.append(IngItemFirstNew);
+// });
+
+const markUp = ingredients.map((numb) => {
+  const IngItemFirstNewMap = document.createElement("li");
+  IngItemFirstNewMap.textContent = numb;
+  IngItemFirstNewMap.classList.add("item");
+
+  return IngItemFirstNewMap;
 });
+
+listIngredients.append(...markUp);

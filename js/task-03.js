@@ -15,14 +15,27 @@ const images = [
 
 const galleryJs = document.querySelector(".gallery");
 console.log(galleryJs);
-
-images.forEach((element) => {
-  galleryJs.insertAdjacentHTML(
-    "beforeend",
-    `<li class="galleryListTaskTree"> <img src="${element.url}" alt="${element.alt}" width = 700px>  </li>`
-  );
+//
+// 3 varik
+//
+const mass = [];
+const imgages = images.map((imgage) => {
+  const newGalery = `<li class="galleryListTaskTree"> <img src="${imgage.url}" alt="${imgage.alt}" width=700px> </li>`;
+  mass.push(newGalery);
 });
-
+galleryJs.insertAdjacentHTML("beforeend", mass.join(""));
+//
+// 2 varik
+//
+// images.forEach((element) => {
+//   galleryJs.insertAdjacentHTML(
+//     "beforeend",
+//     `<li class="galleryListTaskTree"> <img src="${element.url}" alt="${element.alt}" width = 700px>  </li>`
+//   );
+// });
+//
+// 1 varik
+//
 // for (const image of images) {
 //   galleryJs.insertAdjacentHTML(
 //     "beforeend",
